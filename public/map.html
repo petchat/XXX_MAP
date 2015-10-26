@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+    <title>Filter by marker type</title>
+    <script src="jquery-1.11.3.js"></script>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet'/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<style>
+    .filter-ui {
+        background: #fff;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+        padding: 10px;
+        border-radius: 3px;
+    }
+</style>
+
+<nav id='filters' class='filter-ui'></nav>
+<div id='map'></div>
+<script>
+
+    L.mapbox.accessToken = 'pk.eyJ1IjoiaGloZWxsIiwiYSI6ImNpZzFweG1rdzExcDF1MW0zaGRlNGoxNGEifQ._-5BcIntZ82NfmOL9mMuYA';
+    var map = L.mapbox.map('map', 'mapbox.streets').setView([35.208388, 110.191104], 4)
+
+    var featureLayer = null
+
+
+    var getJson = function (path) {
+        return new Promise(function (resolve, reject) {
+            $.getJSON(path, function (data) {
+                if (data) {
+                    resolve(data)
+                } else {
+                    reject('load failed:', path)
+                }
+            })
+        })
+    }
+
+    var hospitalInfo = null
+    var patientInfo = null
+    var ageColor = null
+
+    getJson('./hospital.json').then(function (data) {
+        hospitalInfo = data
+        return getJson('./patients.json')
+    }).then(function (data) {
+        patientInfo = data
+        return getJson('./ageColor.json')
+    }).then(function (data) {
+        ageColor = data
+        assembleData(hospitalInfo, patientInfo)
+        drawMap()
+    })
+
+    var getColorByAge = function (colorMap, age) {
+        if (age > 99) {
+            age = 99
+        } else if (age < 0) {
+            age = 0
+        }
+
+        i = Math.floor(age / 10)
+
+        return colorMap[i]
+    }
+
+    var getSizeByCost = function (cost) {
+        if (cost < 3000) {
+            return 'small'
+        } else if (cost >= 3000 && cost < 7000) {
+            return 'medium'
+        } else {
+            return 'large'
+        }
+    }
+
+    var assembleData = function (hospitalInfo, patientInfo) {
+
+        for (var i = 0; i < patientInfo.length; i++) {
+
+            var p = patientInfo[i]
+            // assign marker-symbol to patient
+            var ho = p['hospital']
+            var symbol = null
+
+            for (var j = 0; j < hospitalInfo.length; j++) {
+                var h = hospitalInfo[j]
+                if (h['hospital'] == ho) {
+                    symbol = h['marker-symbol']
+                }
+            }
+            p['marker-symbol'] = symbol
+            p['marker-size'] = getSizeByCost(p.cost)
+
+            // assign color according to patient age
+            var age = p['age']
+            p['marker-color'] = getColorByAge(ageColor, age)
+        }
+
+        return patientInfo
+    }
+
+    var getGeoJson = function (ho, pa) {
+
+        var geos = []
+        for (var i = 0; i < ho.length; i++) {
+            var d = {}
+            d['type'] = 'Feature'
+            d['geometry'] = {
+                "type": "Point",
+                "coordinates": [ho[i].hospitalLocation.lng, ho[i].hospitalLocation.lat]
+            }
+            d['properties'] = {
+                'illnessType': '医院',
+                'title': ho[i].hospital,
+                'marker-size': 'large',
+                'marker-symbol': ho[i]['marker-symbol']
+            }
+            geos.push(d)
+        }
+
+        for (var i = 0; i < pa.length; i++) {
+            var d = {}
+            d['type'] = 'Feature'
+            d['geometry'] = {
+                "type": "Point",
+                "coordinates": [pa[i].location.lng, pa[i].location.lat]
+            }
+
+            var mHtml = "地址:" + pa[i].address + '<br>'
+                    + "开销:" + pa[i].cost + '<br>'
+                    + "年龄:" + pa[i].age + '<br>'
+                    + "性别:" + pa[i].sex + '<br>'
+                    + "病:" + pa[i].illness + '<br>'
+                    + "医院:" + pa[i].hospital
+
+            d['properties'] = {
+                'title': '病人',
+                'description': mHtml,
+                'marker-size': pa[i]['marker-size'],
+                'marker-symbol': pa[i]['marker-symbol'],
+                'marker-color': pa[i]['marker-color'],
+                'illnessType': pa[i]['illnessType']
+
+            }
+            geos.push(d)
+        }
+
+
+        var j = {}
+        j["type"] = "FeatureCollection"
+        j["features"] = geos
+        j["id"] = "mapbox.cec_patients"
+
+        return j
+    }
+
+
+    var drawMap = function () {
+        var geojson = getGeoJson(hospitalInfo, patientInfo)
+        featureLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(map);
+
+        // Find and store a variable reference to the list of filters.
+        var filters = document.getElementById('filters');
+
+        // Wait until the marker layer is loaded in order to build a list of possible
+        // types. If you are doing this with another featureLayer, you should change
+        // map.featureLayer to the variable you have assigned to your featureLayer.
+//        featureLayer.on('ready', function() {
+
+        setTimeout(function () {
+
+            console.log('feature layer is ready')
+
+            // Collect the types of symbols in this layer. you can also just
+            // hardcode an array of types if you know what you want to filter on,
+            // like var types = ['foo', 'bar'];
+            var typesObj = {}, types = [];
+
+            var features = featureLayer.getGeoJSON().features
+
+            for (var i = 0; i < features.length; i++) {
+                if (features[i].properties.hasOwnProperty('illnessType')) {
+                    typesObj[features[i].properties['illnessType']] = true;
+                }
+            }
+            for (var k in typesObj) types.push(k);
+
+            var checkboxes = [];
+            // Create a filter interface.
+            for (var i = 0; i < types.length; i++) {
+                // Create an an input checkbox and label inside.
+                var item = filters.appendChild(document.createElement('div'));
+                var checkbox = item.appendChild(document.createElement('input'));
+                var label = item.appendChild(document.createElement('label'));
+                checkbox.type = 'checkbox';
+                checkbox.id = types[i];
+                checkbox.checked = true;
+                // create a label to the right of the checkbox with explanatory text
+                label.innerHTML = types[i];
+                label.setAttribute('for', types[i]);
+                // Whenever a person clicks on this checkbox, call the update().
+                checkbox.addEventListener('change', update);
+                checkboxes.push(checkbox);
+            }
+
+            // This function is called whenever someone clicks on a checkbox and changes
+            // the selection of markers to be displayed.
+            function update() {
+
+                console.log('update!!!')
+
+                var enabled = {};
+                // Run through each checkbox and record whether it is checked. If it is,
+                // add it to the object of types to display, otherwise do not.
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].checked) enabled[checkboxes[i].id] = true;
+                }
+                featureLayer.setFilter(function (feature) {
+                    // If this symbol is in the list, return true. if not, return false.
+                    // The 'in' operator in javascript does exactly that: given a string
+                    // or number, it says if that is in a object.
+                    // 2 in { 2: true } // true
+                    // 2 in { } // false
+                    return (feature.properties['illnessType'] in enabled);
+                });
+            }
+        }, 2000)
+    }
+
+</script>
+</body>
+</html>

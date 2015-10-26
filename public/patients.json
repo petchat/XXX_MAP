@@ -1,0 +1,376 @@
+[
+  {
+    "illness": "高血压Ⅱ",
+    "illnessType": "高血压",
+    "age": 67,
+    "sex": "female",
+    "cost": 3787.71,
+    "location": {
+      "lat": 35.244088,
+      "lng": 110.153024
+    },
+    "address": "西峡小区",
+    "hospitalLocation": {
+      "lat": 35.208388,
+      "lng": 110.191104
+    },
+    "hospital": "合阳县医院"
+  },
+  {
+    "illness": "冠心病",
+    "illnessType": "冠心病",
+    "age": 67,
+    "sex": "female",
+    "cost": 8542.96,
+    "location": {
+      "lat": 35.208388,
+      "lng": 110.191104
+    },
+    "address": "环北路小区",
+    "hospitalLocation": {
+      "lat": 35.208388,
+      "lng": 110.191104
+    },
+    "hospital": "合阳县医院"
+  },
+  {
+    "illness": "冠心病",
+    "illnessType": "冠心病",
+    "age": 67,
+    "sex": "female",
+    "cost": 4042.15,
+    "location": {
+      "lat": 34.036426,
+      "lng": 108.70616
+    },
+    "address": "庞光镇焦东村16组",
+    "hospitalLocation": {
+      "lat": 34.064109,
+      "lng": 108.635648
+    },
+    "hospital": "西安惠安医院"
+  },
+  {
+    "illness": "冠心病",
+    "illnessType": "冠心病",
+    "age": 68,
+    "sex": "female",
+    "cost": 3024.89,
+    "location": {
+      "lat": 34.041122,
+      "lng": 108.68368
+    },
+    "address": "庞光焦东村16组",
+    "hospitalLocation": {
+      "lat": 34.064109,
+      "lng": 108.635648
+    },
+    "hospital": "西安惠安医院"
+  },
+  {
+    "illness": "冠心病",
+    "illnessType": "冠心病",
+    "age": 68,
+    "sex": "female",
+    "cost": 3514.1,
+    "location": {
+      "lat": 34.041122,
+      "lng": 108.68368
+    },
+    "address": "庞光焦东村16组",
+    "hospitalLocation": {
+      "lat": 34.064109,
+      "lng": 108.635648
+    },
+    "hospital": "西安惠安医院"
+  },
+  {
+    "illness": "脑梗塞",
+    "illnessType": "脑梗塞",
+    "age": 64,
+    "sex": "female",
+    "cost": 2100,
+    "location": {
+      "lat": 34.410705,
+      "lng": 107.688985
+    },
+    "address": "岐山县渔场",
+    "hospitalLocation": {
+      "lat": 34.266762,
+      "lng": 107.845475
+    },
+    "hospital": "眉县常兴中心卫生院"
+  },
+  {
+    "illness": "高血压3级",
+    "illnessType": "高血压",
+    "age": 44,
+    "sex": "male",
+    "cost": 2117,
+    "location": {
+      "lat": 34.167114,
+      "lng": 108.871617
+    },
+    "address": "西安市长安区郭杜镇南街1号",
+    "hospitalLocation": {
+      "lat": 34.165875,
+      "lng": 108.948274
+    },
+    "hospital": "西安市长安区医院"
+  },
+  {
+    "illness": "高血压3级",
+    "illnessType": "高血压",
+    "age": 43,
+    "sex": "male",
+    "cost": 3616,
+    "location": {
+      "lat": 34.166114,
+      "lng": 108.870617
+    },
+    "address": "西安市长安区郭杜镇南街1号",
+    "hospitalLocation": {
+      "lat": 34.165875,
+      "lng": 108.948274
+    },
+    "hospital": "西安市长安区医院"
+  },
+  {
+    "illness": "高血压3级",
+    "illnessType": "高血压",
+    "age": 43,
+    "sex": "male",
+    "cost": 3616,
+    "location": {
+      "lat": 34.166114,
+      "lng": 108.871617
+    },
+    "address": "西安市长安区郭杜镇南街1号",
+    "hospitalLocation": {
+      "lat": 34.165875,
+      "lng": 108.948274
+    },
+    "hospital": "西安市长安区医院"
+  },
+  {
+    "illness": "脑出血后遗症",
+    "illnessType": "脑梗塞",
+    "age": 44,
+    "sex": "male",
+    "cost": 1210,
+    "location": {
+      "lat": 34.166314,
+      "lng": 108.879617
+    },
+    "address": "陕西省西安市长安区郭杜镇南街1号",
+    "hospitalLocation": {
+      "lat": 34.165875,
+      "lng": 108.948274
+    },
+    "hospital": "西安市长安区医院"
+  },
+  {
+    "illness": "高血压3级",
+    "illnessType": "高血压",
+    "age": 45,
+    "sex": "male",
+    "cost": 980,
+    "location": {
+      "lat": 34.166114,
+      "lng": 108.870617
+    },
+    "address": "陕西省西安市长安区郭杜镇南街1号",
+    "hospitalLocation": {
+      "lat": 34.165875,
+      "lng": 108.948274
+    },
+    "hospital": "西安市长安区医院"
+  },
+  {
+    "illness": "腔隙性脑梗塞",
+    "illnessType": "脑梗塞",
+    "age": 69,
+    "sex": "male",
+    "cost": 1121,
+    "location": {
+      "lat": 34.272936,
+      "lng": 108.708174
+    },
+    "address": "城关北堡子",
+    "hospitalLocation": {
+      "lat": 34.487607,
+      "lng": 108.432883
+    },
+    "hospital": "礼泉县人民医院"
+  },
+  {
+    "illness": "脑梗塞",
+    "illnessType": "脑梗塞",
+    "age": 69,
+    "sex": "male",
+    "cost": 1303,
+    "location": {
+      "lat": 34.597854,
+      "lng": 108.482569
+    },
+    "address": "广场嘉苑",
+    "hospitalLocation": {
+      "lat": 34.489726,
+      "lng": 108.434479
+    },
+    "hospital": "礼泉县人民医院"
+  },
+  {
+    "illness": "腔隙性脑梗塞",
+    "illnessType": "脑梗塞",
+    "age": 72,
+    "sex": "male",
+    "cost": 1433,
+    "location": {
+      "lat": 34.598746,
+      "lng": 108.467642
+    },
+    "address": "昭陵镇肖山村",
+    "hospitalLocation": {
+      "lat": 34.487607,
+      "lng": 108.432883
+    },
+    "hospital": "礼泉县人民医院"
+  },
+  {
+    "illness": "多发性脑梗死",
+    "illnessType": "脑梗塞",
+    "age": 78,
+    "sex": "male",
+    "cost": 9764.5,
+    "location": {
+      "lat": 34.264038,
+      "lng": 108.971244
+    },
+    "address": "西安市碑林区玄风桥十号2号楼1门1号",
+    "hospitalLocation": {
+      "lat": 34.266594,
+      "lng": 108.973524
+    },
+    "hospital": "陕西省第二人民医院"
+  },
+  {
+    "illness": "脑梗死",
+    "illnessType": "脑梗塞",
+    "age": 79,
+    "sex": "male",
+    "cost": 11664.74,
+    "location": {
+      "lat": 34.263538,
+      "lng": 108.972244
+    },
+    "address": "西安市碑林区玄风桥十号2号楼1门1号",
+    "hospitalLocation": {
+      "lat": 34.266594,
+      "lng": 108.973524
+    },
+    "hospital": "陕西省第二人民医院"
+  },
+  {
+    "illness": "高血压Ⅲ期",
+    "illnessType": "高血压",
+    "age": 78,
+    "sex": "male",
+    "cost": 4471.28,
+    "location": {
+      "lat": 34.263938,
+      "lng": 108.972144
+    },
+    "address": "西安市碑林区玄风桥十号2号楼1门1号",
+    "hospitalLocation": {
+      "lat": 34.266594,
+      "lng": 108.973524
+    },
+    "hospital": "陕西省第二人民医院"
+  },
+  {
+    "illness": "脑梗塞",
+    "illnessType": "脑梗塞",
+    "age": 78,
+    "sex": "male",
+    "cost": 1201,
+    "location": {
+      "lat": 34.263238,
+      "lng": 108.972544
+    },
+    "address": "西安市碑林区玄风桥十号2号楼1门1号",
+    "hospitalLocation": {
+      "lat": 34.266594,
+      "lng": 108.973524
+    },
+    "hospital": "陕西省第二人民医院"
+  },
+  {
+    "illness": "腔隙性脑梗死",
+    "illnessType": "脑梗塞",
+    "age": 71,
+    "sex": "female",
+    "cost": 4250.77,
+    "location": {
+      "lat": 34.597854,
+      "lng": 108.482569
+    },
+    "address": "候庄乡韩庄村",
+    "hospitalLocation": {
+      "lat": 35.583713,
+      "lng": 109.271355
+    },
+    "hospital": "黄陵县人民医院"
+  },
+  {
+    "illness": "冠状动脉粥样硬化性心脏病",
+    "illnessType": "冠心病",
+    "age": 71,
+    "sex": "female",
+    "cost": 4833.44,
+    "location": {
+      "lat": 34.597854,
+      "lng": 108.482569
+    },
+    "address": "侯庄",
+    "hospitalLocation": {
+      "lat": 35.583713,
+      "lng": 109.271355
+    },
+    "hospital": "黄陵县人民医院"
+  },
+  {
+    "illness": "脑梗死",
+    "illnessType": "脑梗塞",
+    "age": 70,
+    "sex": "female",
+    "cost": 4433.74,
+    "location": {
+      "lat": 34.597854,
+      "lng": 108.482569
+    },
+    "address": "候庄",
+    "hospitalLocation": {
+      "lat": 35.583713,
+      "lng": 109.271355
+    },
+    "hospital": "黄陵县人民医院"
+  },
+  {
+    "illness": "冠状动脉粥样硬化性心脏病",
+    "illnessType": "冠心病",
+    "age": 49,
+    "sex": "female",
+    "cost": 6506.66,
+    "location": {
+      "lat": 34.5959854,
+      "lng": 108.481469
+    },
+    "address": "候庄乡韩庄村",
+    "hospitalLocation": {
+      "lat": 35.583713,
+      "lng": 109.271355
+    },
+    "hospital": "黄陵县人民医院"
+  }
+]

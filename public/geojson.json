@@ -1,0 +1,517 @@
+[
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.1494836807251,
+        35.235664752688166
+      ]
+    },
+    "properties": {
+      "title": "医院",
+      "description": "地址合阳县医院",
+      "marker-size": "large",
+      "marker-symbol": "square",
+      "illnessType": "医院"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.62380027770995,
+        34.056534976214444
+      ]
+    },
+    "properties": {
+      "title": "医院",
+      "description": "地址西安惠安医院",
+      "marker-size": "large",
+      "marker-symbol": "circle",
+      "illnessType": "医院"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.83475875854492,
+        34.26409740806241
+      ]
+    },
+    "properties": {
+      "title": "医院",
+      "description": "地址眉县常兴中心卫生院",
+      "marker-size": "large",
+      "marker-symbol": "star",
+      "illnessType": "医院"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.93733978271484,
+        34.16085937189361
+      ]
+    },
+    "properties": {
+      "title": "医院",
+      "description": "地址西安市长安区医院",
+      "marker-size": "large",
+      "marker-symbol": "triangle",
+      "illnessType": "医院"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.42059612274169,
+        34.48372104563503
+      ]
+    },
+    "properties": {
+      "title": "医院",
+      "description": "地址礼泉县人民医院",
+      "marker-size": "large",
+      "marker-symbol": "cross",
+      "illnessType": "医院"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.96278858184814,
+        34.26161465063243
+      ]
+    },
+    "properties": {
+      "title": "医院",
+      "description": "地址陕西省第二人民医院",
+      "marker-size": "large",
+      "marker-symbol": "water",
+      "illnessType": "医院"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        109.26002025604248,
+        35.57845231000081
+      ]
+    },
+    "properties": {
+      "title": "医院",
+      "description": "地址黄陵县人民医院",
+      "marker-size": "large",
+      "marker-symbol": "religious-jewish",
+      "illnessType": "医院"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.153024,
+        35.244088
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:西峡小区<br>开销:3787.71<br>年龄:67<br>性别:female<br>病:高血压Ⅱ<br>医院:合阳县医院",
+      "marker-size": "medium",
+      "marker-symbol": "square",
+      "marker-color": "#f7241b",
+      "illnessType": "高血压"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.191104,
+        35.208388
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:环北路小区<br>开销:8542.96<br>年龄:67<br>性别:female<br>病:冠心病<br>医院:合阳县医院",
+      "marker-size": "large",
+      "marker-symbol": "square",
+      "marker-color": "#f7241b",
+      "illnessType": "冠心病"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.70616,
+        34.036426
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:庞光镇焦东村16组<br>开销:4042.15<br>年龄:67<br>性别:female<br>病:冠心病<br>医院:西安惠安医院",
+      "marker-size": "medium",
+      "marker-symbol": "circle",
+      "marker-color": "#f7241b",
+      "illnessType": "冠心病"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.68368,
+        34.041122
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:庞光焦东村16组<br>开销:3024.89<br>年龄:68<br>性别:female<br>病:冠心病<br>医院:西安惠安医院",
+      "marker-size": "medium",
+      "marker-symbol": "circle",
+      "marker-color": "#f7241b",
+      "illnessType": "冠心病"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.68368,
+        34.041122
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:庞光焦东村16组<br>开销:3514.1<br>年龄:68<br>性别:female<br>病:冠心病<br>医院:西安惠安医院",
+      "marker-size": "medium",
+      "marker-symbol": "circle",
+      "marker-color": "#f7241b",
+      "illnessType": "冠心病"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        107.688985,
+        34.410705
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:岐山县渔场<br>开销:2100<br>年龄:64<br>性别:female<br>病:脑梗塞<br>医院:眉县常兴中心卫生院",
+      "marker-size": "small",
+      "marker-symbol": "star",
+      "marker-color": "#f7241b",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.870617,
+        34.166114
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:西安市长安区郭杜镇南街1号<br>开销:2117<br>年龄:44<br>性别:male<br>病:高血压3级<br>医院:西安市长安区医院",
+      "marker-size": "small",
+      "marker-symbol": "triangle",
+      "marker-color": "#faa512",
+      "illnessType": "高血压"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.870617,
+        34.166114
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:西安市长安区郭杜镇南街1号<br>开销:3616<br>年龄:43<br>性别:male<br>病:高血压3级<br>医院:西安市长安区医院",
+      "marker-size": "medium",
+      "marker-symbol": "triangle",
+      "marker-color": "#faa512",
+      "illnessType": "高血压"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.870617,
+        34.166114
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:西安市长安区郭杜镇南街1号<br>开销:3616<br>年龄:43<br>性别:male<br>病:高血压3级<br>医院:西安市长安区医院",
+      "marker-size": "medium",
+      "marker-symbol": "triangle",
+      "marker-color": "#faa512",
+      "illnessType": "高血压"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.870617,
+        34.166114
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:陕西省西安市长安区郭杜镇南街1号<br>开销:1210<br>年龄:44<br>性别:male<br>病:脑出血后遗症<br>医院:西安市长安区医院",
+      "marker-size": "small",
+      "marker-symbol": "triangle",
+      "marker-color": "#faa512",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.870617,
+        34.166114
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:陕西省西安市长安区郭杜镇南街1号<br>开销:980<br>年龄:45<br>性别:male<br>病:高血压3级<br>医院:西安市长安区医院",
+      "marker-size": "small",
+      "marker-symbol": "triangle",
+      "marker-color": "#faa512",
+      "illnessType": "高血压"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.708174,
+        34.272936
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:城关北堡子<br>开销:1121<br>年龄:69<br>性别:male<br>病:腔隙性脑梗塞<br>医院:礼泉县人民医院",
+      "marker-size": "small",
+      "marker-symbol": "cross",
+      "marker-color": "#f7241b",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.482569,
+        34.597854
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:广场嘉苑<br>开销:1303<br>年龄:69<br>性别:male<br>病:脑梗塞<br>医院:礼泉县人民医院",
+      "marker-size": "small",
+      "marker-symbol": "cross",
+      "marker-color": "#f7241b",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.467642,
+        34.598746
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:昭陵镇肖山村<br>开销:1433<br>年龄:72<br>性别:male<br>病:腔隙性脑梗塞<br>医院:礼泉县人民医院",
+      "marker-size": "small",
+      "marker-symbol": "cross",
+      "marker-color": "#b918b0",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.972244,
+        34.263038
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:西安市碑林区玄风桥十号2号楼1门1号<br>开销:9764.5<br>年龄:78<br>性别:male<br>病:多发性脑梗死<br>医院:陕西省第二人民医院",
+      "marker-size": "large",
+      "marker-symbol": "water",
+      "marker-color": "#b918b0",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.972244,
+        34.263038
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:西安市碑林区玄风桥十号2号楼1门1号<br>开销:11664.74<br>年龄:79<br>性别:male<br>病:脑梗死<br>医院:陕西省第二人民医院",
+      "marker-size": "large",
+      "marker-symbol": "water",
+      "marker-color": "#b918b0",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.972244,
+        34.263038
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:西安市碑林区玄风桥十号2号楼1门1号<br>开销:4471.28<br>年龄:78<br>性别:male<br>病:高血压Ⅲ期<br>医院:陕西省第二人民医院",
+      "marker-size": "medium",
+      "marker-symbol": "water",
+      "marker-color": "#b918b0",
+      "illnessType": "高血压"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.972244,
+        34.263038
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:西安市碑林区玄风桥十号2号楼1门1号<br>开销:1201<br>年龄:78<br>性别:male<br>病:脑梗塞<br>医院:陕西省第二人民医院",
+      "marker-size": "small",
+      "marker-symbol": "water",
+      "marker-color": "#b918b0",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.482569,
+        34.597854
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:候庄乡韩庄村<br>开销:4250.77<br>年龄:71<br>性别:female<br>病:腔隙性脑梗死<br>医院:黄陵县人民医院",
+      "marker-size": "medium",
+      "marker-symbol": "religious-jewish",
+      "marker-color": "#b918b0",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.482569,
+        34.597854
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:侯庄<br>开销:4833.44<br>年龄:71<br>性别:female<br>病:冠状动脉粥样硬化性心脏病<br>医院:黄陵县人民医院",
+      "marker-size": "medium",
+      "marker-symbol": "religious-jewish",
+      "marker-color": "#b918b0",
+      "illnessType": "冠心病"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.482569,
+        34.597854
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:候庄<br>开销:4433.74<br>年龄:70<br>性别:female<br>病:脑梗死<br>医院:黄陵县人民医院",
+      "marker-size": "medium",
+      "marker-symbol": "religious-jewish",
+      "marker-color": "#b918b0",
+      "illnessType": "脑梗塞"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        108.482569,
+        34.597854
+      ]
+    },
+    "properties": {
+      "title": "病人",
+      "description": "地址:候庄乡韩庄村<br>开销:6506.66<br>年龄:49<br>性别:female<br>病:冠状动脉粥样硬化性心脏病<br>医院:黄陵县人民医院",
+      "marker-size": "medium",
+      "marker-symbol": "religious-jewish",
+      "marker-color": "#faa512",
+      "illnessType": "冠心病"
+    }
+  }
+]

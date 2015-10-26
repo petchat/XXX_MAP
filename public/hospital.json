@@ -1,0 +1,66 @@
+[
+  {
+    "hospitalLocation": {
+      "lat": 35.235664752688166,
+      "lng": 110.1494836807251
+    },
+    "marker-symbol": "square",
+    "hospital": "合阳县医院",
+    "illnessType": "医院"
+  },
+  {
+    "hospitalLocation": {
+      "lat": 34.056534976214444,
+      "lng": 108.62380027770995
+    },
+    "marker-symbol": "circle",
+    "hospital": "西安惠安医院",
+    "illnessType": "医院"
+  },
+  {
+    "hospitalLocation": {
+      "lat": 34.26409740806241,
+      "lng": 107.83475875854492
+    },
+    "marker-symbol": "star",
+    "hospital": "眉县常兴中心卫生院",
+    "illnessType": "医院"
+  },
+  {
+    "hospitalLocation": {
+      "lat": 34.16085937189361,
+      "lng": 108.93733978271484
+    },
+    "marker-symbol": "triangle",
+    "hospital": "西安市长安区医院",
+    "illnessType": "医院"
+  },
+  {
+    "hospitalLocation": {
+      "lat": 34.48372104563503,
+      "lng": 108.42059612274169
+    },
+    "marker-symbol": "cross",
+    "hospital": "礼泉县人民医院",
+    "illnessType": "医院"
+  },
+  {
+    "hospitalLocation": {
+      "lat": 34.26161465063243,
+      "lng": 108.96278858184814
+    },
+    "marker-symbol": "water",
+    "hospital": "陕西省第二人民医院",
+    "illnessType": "医院"
+  },
+  {
+    "hospitalLocation": {
+      "lat": 35.57845231000081,
+      "lng": 109.26002025604248
+    },
+    "marker-symbol": "religious-jewish",
+    "hospital": "黄陵县人民医院",
+    "illnessType": "医院"
+  }
+]
+
